@@ -1,0 +1,9 @@
+Using BeautifulSoup 3
+
+If you want use our samples "as is", download our Python 3 version of BeautifulSoup 3 from
+
+http://www.py4e.com/code3/bs4.zip
+
+You must unzip this into a "bs4" folder and have that folder as a sub-folder of the folder where you put our sample code like:
+
+http://www.py4e.com/code3/urllinks.py
