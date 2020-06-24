@@ -24,9 +24,14 @@ soup = BeautifulSoup (html, 'html.parser')
 #Retrieve all tags
 tags = soup('span')
 for tag in tags:
-    content.append(tag.contents[0])
+    print('TAG:', tag)
+    print('URL:', tag.get('href', None))
+    print('Contents:', tag.contents[0])
+    print('Attrs:', tag.attrs)
+    content.append(tag.contents[0]) #The above line from print tag to print Attrs are fromm example, 
+    # we just tested it and we can leave that and just use content line.
 
 for i in range(len(content)):
     total = total + int(content[i])
     
-print('Sum', total) #Sum is 2229
+print('Sum', total)
